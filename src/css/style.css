@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3e7bd6;
+    padding: 20px;
+    /* position: relative; */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 97%;
+    margin: auto;
+}
+
+.column {
+    background-color: rgba(222, 222, 223, 0.938);
+    width: 32%;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.column-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+    color: rgb(25, 25, 102);
+    padding: 15px;
+    font-size: 14px;
+}
+
+.title-el {
+    font-size: 25px;
+    color: rgb(145, 145, 145);
+    font-family: serif;
+}
+
+.column-content {
+    width: 90%;
+    margin: auto;
+    min-height: 20px;
+}
+
+.add-button {
+    border: none;
+    padding: 15px;
+    background-color: transparent;
+    color: rgb(131, 131, 131);
+
+    cursor: pointer;
+}
+
+.add-button:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.card-textarea {
+    width: 100%;
+    margin: auto;
+    min-height: 50px;
+    border: none;
+    resize: none;
+    border-radius: 3px;
+    padding: 10px;
+
+    font-family: 'Arial', serif;
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+.card-textarea:focus-visible {
+   outline: none;
+}
+
+.submit-card-button {
+    border: none;
+    display: block;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(1, 163, 1);
+    color: white;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+.new-card-delete-button {
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(131, 131, 131);
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    background-color: #fff;
+    width: 93%;
+    margin: auto;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.card:hover {
+    background-color: #eceef3;
+}
+
+.card-button-delete {
+    position: absolute;
+    /* display: block; */
+    border:  none;
+    top: 2px;
+    right: 2px;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+.moving {
+    cursor: url('../img/icons8-рука-в-кулак-50.png'), auto;
+}
+
+.card.dragged {
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    background-color: #eceef3;
+    transform: rotate(2deg);
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.place {
+    display: flex;
+    background-color: #fff;
+    width: 93%;
+    background-color: transparent;
+    margin-bottom: 10px;
+    min-height: 38px;
+}
+
+.hidden {
+    display: none;
+}
