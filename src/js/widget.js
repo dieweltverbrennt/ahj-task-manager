@@ -10,7 +10,9 @@ export default class Widget {
     this.dom.drawColumn('In Progress');
     this.dom.drawColumn('Done');
 
-    this.loadState();
+    if (this.state.storage.length > 0) {
+      this.loadState();
+    }
 
     this.dom.columns.forEach((item) => {
       const addCardBtn = item.querySelector('.add-button');
