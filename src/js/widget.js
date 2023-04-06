@@ -10,10 +10,8 @@ export default class Widget {
     this.dom.drawColumn('In Progress');
     this.dom.drawColumn('Done');
 
-    console.log('y');
-
-    if (this.state.storage.length > 0) {
-      this.loadState();
+    if (this.state.storage.getItem('data') !== null) {
+        this.loadState();
     }
 
     this.dom.columns.forEach((item) => {
